@@ -1,0 +1,90 @@
+<html>
+  <!-- force rebuild -->
+<head>
+  <title>My Homepage</title>
+  <link rel="stylesheet" href="trivia.css">
+  <script src = "trivia.js"></script>
+</head>
+
+<body>
+<table width="100%" cellpadding="20" cellspacing="0" align="center" class="layout-table">
+
+  <!-- Header -->
+  <tr class="header">
+    <td colspan="3" style="text-align:center;"><h1>Sariga's Website</h1></td>
+  </tr>
+
+  <!-- Navbar -->
+  <tr class="navbar">
+    <td colspan="3" style="text-align:center;">
+      <a href="index.html">Home</a> |
+      <a href="portfolio.html">Portfolio</a> |
+      <a href="trivia.html">Trivia</a>
+    </td>
+  </tr>
+
+  <!-- Main Section -->
+  <tr class="main">
+
+    <!-- Left Sidebar -->
+    <td class="left-sidebar" width="20%" valign="top">
+      <b>Useful Links for Study</b><br><br>
+
+      <strong>HTML Language/Commands</strong><br>
+      <ul>
+        <li><a href="https://www.htmlhelp.com/" target="_blank">HTML Help by the Web Design Group</a></li>
+        <li><a href="https://www.w3schools.com/html/" target="_blank">HTML Code Tutorial - W3Schools</a></li>
+        <li><a href="https://www.learn-html.org/" target="_blank">Learn HTML By Example</a></li>
+      </ul>
+
+      <strong>Images and Miscellaneous Resources</strong><br>
+      <ul>
+        <li><a href="https://www.htmlgoodies.com/" target="_blank">HTML Goodies</a></li>
+        <li><a href="https://www.animationlibrary.com/" target="_blank">Free GIF Files and Animation</a></li>
+      </ul>
+    </td>
+
+<!-- Content Area -->
+<td class="content" width="60%" valign="top">
+  <h2><center>Find a Cafe Recommendation</center></h2>
+  <p>Type a kind of coffee or pancake you want, and get a cafe recommendation!</p>
+
+  <form onsubmit="event.preventDefault(); findCafe();">
+    <label for="item">Enter item (e.g., latte, souffle, fluffy, espresso):</label><br>
+    <input type="text" id="item" name="item" required><br><br>
+
+    <input type="submit" value="Find Cafe">
+    <input type="button" value="Clear" onclick="clearCafe()">
+  </form>
+
+  <p id="cafeResult" style="margin-top:20px; font-weight:bold;"></p>
+
+  
+</td>
+    
+    <!-- Right Sidebar -->
+    <td class="right-sidebar" width="20%" valign="top">
+      <b>Contact Me</b><br><br>
+      <form>
+        Name:<br>
+        <input type="text" name="name"><br><br>
+        Email:<br>
+        <input type="email" name="email"><br><br>
+        Message:<br>
+        <textarea rows="4" cols="20"></textarea><br><br>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Clear">
+      </form>
+    </td>
+  </tr>
+
+  <!-- Footer -->
+  <tr class="footer">
+    <td colspan="3" style="text-align:center;">
+      <small>Created: July 2025 | <a href="https://github.com">My GitHub</a></small>
+    </td>
+  </tr>
+
+</table>
+</body>
+</html>
